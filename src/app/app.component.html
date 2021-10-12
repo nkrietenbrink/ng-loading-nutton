@@ -1,0 +1,148 @@
+<div>
+  <div class="twitter">
+    <a href="https://twitter.com/AdiSreyaj" target="_blank">
+      <svg
+        width="61"
+        height="61"
+        viewBox="0 0 61 61"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path d="M0.5 60.5V0H61L0.5 60.5Z" fill="#1DA1F2" />
+        <path
+          d="M30.383 12.9675C29.6196 13.3051 28.81 13.5269 27.981 13.6255C28.8548 13.1029 29.5087 12.2805 29.821 11.3114C29.001 11.7994 28.102 12.1414 27.165 12.3264C26.5356 11.653 25.7014 11.2064 24.792 11.056C23.8825 10.9057 22.9489 11.0599 22.1363 11.4949C21.3236 11.9299 20.6774 12.6211 20.2981 13.4612C19.9188 14.3014 19.8277 15.2432 20.039 16.1405C18.3761 16.0571 16.7493 15.625 15.2643 14.8721C13.7792 14.1193 12.4691 13.0625 11.419 11.7705C11.0473 12.4089 10.852 13.1347 10.853 13.8734C10.853 15.3234 11.591 16.6045 12.713 17.3545C12.049 17.3335 11.3996 17.1542 10.819 16.8315V16.8834C10.8192 17.8492 11.1534 18.7851 11.7648 19.5325C12.3763 20.28 13.2275 20.7929 14.174 20.9845C13.5576 21.1515 12.9113 21.1761 12.284 21.0564C12.5509 21.8877 13.071 22.6146 13.7716 23.1356C14.4722 23.6565 15.3181 23.9452 16.191 23.9614C15.3235 24.6428 14.3302 25.1464 13.2679 25.4436C12.2056 25.7408 11.0951 25.8257 10 25.6934C11.9117 26.9229 14.1371 27.5756 16.41 27.5734C24.103 27.5734 28.31 21.2005 28.31 15.6735C28.31 15.4935 28.305 15.3115 28.297 15.1335C29.1159 14.5416 29.8226 13.8085 30.384 12.9685L30.383 12.9675Z"
+          fill="white"
+        />
+      </svg>
+    </a>
+  </div>
+  <header style="padding-top: 2rem;">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 61 61"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M30.9198 60.1595C47.4883 60.1595 60.9198 46.728 60.9198 30.1595C60.9198 13.5909 47.4883 0.159485 30.9198 0.159485C14.3512 0.159485 0.919769 13.5909 0.919769 30.1595C0.919769 46.728 14.3512 60.1595 30.9198 60.1595Z"
+        fill="#E23237"
+      />
+      <path
+        d="M30.5044 13.7677L15.8199 46.4399L21.3056 46.3471L24.2539 38.9767H37.427L40.6549 46.4405L45.8981 46.5333L30.5044 13.7677ZM30.5418 24.2355L35.5051 34.61H26.1764L30.5418 24.2355Z"
+        fill="white"
+      />
+    </svg>
+
+    <h1 style="margin-top: 0.5rem;">
+      Loading Buttons
+    </h1>
+  </header>
+  <div class="btn-container">
+    <button
+      adiButton
+      [loading]="loading[1]"
+      variant="primary"
+      (click)="doSomething(1)"
+    >
+      Update
+    </button>
+    <button
+      adiButton
+      [loading]="loading[2]"
+      variant="secondary"
+      (click)="doSomething(2)"
+    >
+      Save User
+      <ng-template adiButtonLoader> Saving... </ng-template>
+    </button>
+    <button adiButton [loading]="loading[3]" (click)="doSomething(3)">
+      Search
+      <ng-template adiButtonLoader>
+        <adi-search-loader></adi-search-loader>
+      </ng-template>
+    </button>
+    <button
+      adiButton
+      [loading]="loading[4]"
+      variant="outline"
+      (click)="doSomething(4)"
+    >
+      Get Results
+      <ng-template adiButtonLoader>
+        <adi-circle-lines-loader></adi-circle-lines-loader>
+      </ng-template>
+    </button>
+  </div>
+</div>
+
+<section style="display: grid; place-items: center; margin-top: 3rem;">
+  <a
+    class="view-article"
+    target="_blank"
+    href="https://blog.sreyaj.dev/creating-buttons-with-custom-loading-animations-in-angular-simple-and-easy"
+  >
+    <div style="display: flex; align-items: center;">
+      <svg
+        style="margin-right: 0.5rem;"
+        height="30"
+        viewBox="0 0 400 616"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0.781309 115.983L201.003 0.385132L201.003 231.581L0.781309 115.983Z"
+          fill="#09B4BF"
+        />
+        <path
+          d="M0.781309 342.207L201.003 226.609L201.003 457.805L0.781309 342.207Z"
+          fill="#09B4BF"
+        />
+        <path
+          d="M201.313 385.298L1.0909 500.896L1.09091 269.7L201.313 385.298Z"
+          fill="#09B4BF"
+        />
+        <path
+          d="M200.933 231.449L0.711121 347.047L0.711131 115.851L200.933 231.449Z"
+          fill="#09B4BF"
+        />
+        <path
+          d="M0.781309 500.034L201.003 384.436L201.003 615.632L0.781309 500.034Z"
+          fill="#09B4BF"
+        />
+        <path
+          d="M399.776 115.983L199.554 0.385132L199.554 231.581L399.776 115.983Z"
+          fill="#4A53A0"
+        />
+        <path
+          d="M399.776 342.207L199.554 226.609L199.554 457.805L399.776 342.207Z"
+          fill="#4A53A0"
+        />
+        <path
+          d="M199.245 385.298L399.466 500.896L399.466 269.7L199.245 385.298Z"
+          fill="#4A53A0"
+        />
+        <path
+          d="M199.625 231.449L399.846 347.047L399.846 115.851L199.625 231.449Z"
+          fill="#4A53A0"
+        />
+        <path
+          d="M399.776 500.034L199.554 384.436L199.554 615.632L399.776 500.034Z"
+          fill="#4A53A0"
+        />
+        <path
+          d="M199.571 219.689L67.3687 143.362L199.571 67.0343L199.571 219.689Z"
+          fill="#002A26"
+        />
+        <path
+          d="M199.509 219.968L331.712 143.641L199.509 67.3138L199.509 219.968Z"
+          fill="#050A3D"
+        />
+      </svg>
+
+      <p>
+        View Article
+      </p>
+    </div>
+  </a>
+</section>
